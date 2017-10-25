@@ -1,4 +1,3 @@
-
 FROM openjdk:8-alpine
 
 MAINTAINER Jan Mares DT>Force <jan.mares@dtforce.com>
