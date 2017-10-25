@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# apply ARCHIVA_CONTEXT_PATH
+sed -i "s|name=\"contextPath\">/<|name=\"contextPath\">$ARCHIVA_CONTEXT_PATH<|g" \
+  /opt/archiva/apache-archiva-src/contexts/archiva.xml
+
+# start archiva in console mode to keep in foreground
+/opt/archiva/apache-archiva-src/bin/archiva console
